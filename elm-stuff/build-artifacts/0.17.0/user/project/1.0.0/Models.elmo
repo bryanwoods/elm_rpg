@@ -1,0 +1,7 @@
+var _user$project$Models$initialModel = {
+	players: _elm_lang$core$Native_List.fromArray(
+		[])
+};
+var _user$project$Models$Model = function (a) {
+	return {players: a};
+};

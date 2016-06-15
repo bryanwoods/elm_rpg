@@ -1,0 +1,6 @@
+var _user$project$Players_Messages$FetchAllFail = function (a) {
+	return {ctor: 'FetchAllFail', _0: a};
+};
+var _user$project$Players_Messages$FetchAllDone = function (a) {
+	return {ctor: 'FetchAllDone', _0: a};
+};

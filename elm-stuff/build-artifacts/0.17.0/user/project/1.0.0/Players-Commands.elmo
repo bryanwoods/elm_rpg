@@ -1,0 +1,13 @@
+var _user$project$Players_Commands$memberDecoder = A4(
+	_elm_lang$core$Json_Decode$object3,
+	_user$project$Players_Models$Player,
+	A2(_elm_lang$core$Json_Decode_ops[':='], 'id', _elm_lang$core$Json_Decode$int),
+	A2(_elm_lang$core$Json_Decode_ops[':='], 'name', _elm_lang$core$Json_Decode$string),
+	A2(_elm_lang$core$Json_Decode_ops[':='], 'level', _elm_lang$core$Json_Decode$int));
+var _user$project$Players_Commands$collectionDecoder = _elm_lang$core$Json_Decode$list(_user$project$Players_Commands$memberDecoder);
+var _user$project$Players_Commands$fetchAllUrl = 'http://localhost:4000/players';
+var _user$project$Players_Commands$fetchAll = A3(
+	_elm_lang$core$Task$perform,
+	_user$project$Players_Messages$FetchAllFail,
+	_user$project$Players_Messages$FetchAllDone,
+	A2(_evancz$elm_http$Http$get, _user$project$Players_Commands$collectionDecoder, _user$project$Players_Commands$fetchAllUrl));

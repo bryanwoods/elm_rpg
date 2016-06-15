@@ -1,0 +1,11 @@
+var _user$project$Repl$t_s_o_l = {ctor: '_Tuple0'};
+var _user$project$Repl$nameDecoder = A2(_elm_lang$core$Json_Decode_ops[':='], 'name', _elm_lang$core$Json_Decode$string);
+var _user$project$Repl$json = '{\"id\": 99, \"name\":\"Sam\"}';
+var _user$project$Repl$idDecoder = A2(_elm_lang$core$Json_Decode_ops[':='], 'id', _elm_lang$core$Json_Decode$int);
+var _user$project$Repl$Player = F2(
+	function (a, b) {
+		return {id: a, name: b};
+	});
+var _user$project$Repl$playerDecoder = A3(_elm_lang$core$Json_Decode$object2, _user$project$Repl$Player, _user$project$Repl$idDecoder, _user$project$Repl$nameDecoder);
+var _user$project$Repl$result = A2(_elm_lang$core$Json_Decode$decodeString, _user$project$Repl$playerDecoder, _user$project$Repl$json);
+var _user$project$Repl$d_e_l_t_r_o_n_3_0_3_0 = _user$project$Repl$result;
